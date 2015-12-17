@@ -1,0 +1,11 @@
+<h3>This is my Shopping List.</h3>
+<ul>
+    {{#each shoppingList}}
+        <li>{{ .name }}</li>
+    {{/each}}
+</ul>
+
+--------------------------
+
+<h4>And a comment form:</h4>
+<Comments comments="{{comments}}" />

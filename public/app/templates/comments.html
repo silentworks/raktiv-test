@@ -1,0 +1,17 @@
+<h2>Comments</h2>
+
+<ul>
+    {{#each comments}}
+    <li>
+        {{ .text }}<br>
+        {{ .name }}
+    </li>
+    {{/each}}
+</ul>
+
+<form action="/" method="post" on-submit="addComment(event, text, name)">
+    <textarea cols="26" rows="2" value="{{text}}"></textarea> <br>
+    <input type="text" value="{{name}}">
+
+    <button type="submit">Save</button>
+</form>
